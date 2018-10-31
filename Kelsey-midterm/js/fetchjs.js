@@ -1,6 +1,10 @@
 
-function ghsubmitbtn() {   
-    //Create variables equals to the input content
+document.getElementById("button").onclick = function() {ghsubmitbtn()};
+
+
+function ghsubmitbtn() {  
+
+    //Create variables for the input content
     var username = document.getElementById("ghusername").value;
 
 
@@ -27,6 +31,8 @@ function ghsubmitbtn() {
         var followersnum = myJson.followers;
         var followingnum = myJson.following;
         var reposnum     = myJson.public_repos;
+
+
 
         //output 
         var outhtml = '<h2>'+fullname+' <span class="smallname">(@<a href="'+profileurl+'" target="_blank">'+username+'</a>)</span></h2>';
