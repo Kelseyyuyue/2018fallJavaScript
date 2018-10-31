@@ -5,11 +5,11 @@ document.getElementById("button").onclick = function() {ghsubmitbtn()};
 function ghsubmitbtn() {  
 
     //Create variables for the input content
-    var username = document.getElementById("ghusername").value;
+    let username = document.getElementById("ghusername").value;
 
 
     // API request
-    var requri   = 'https://api.github.com/users/'+username;
+    let requri   = 'https://api.github.com/users/'+username;
 
 
    //get response from the API
@@ -23,14 +23,14 @@ function ghsubmitbtn() {
 
     //Parse json file
       .then(function(myJson) {
-        var fullname = myJson.name;
-        var username   = myJson.login;
-        var aviurl     = myJson.avatar_url;
-        var profileurl = myJson.html_url;
-        var location   = myJson.location;
-        var followersnum = myJson.followers;
-        var followingnum = myJson.following;
-        var reposnum     = myJson.public_repos;
+        let fullname = myJson.name;
+        let username   = myJson.login;
+        let aviurl     = myJson.avatar_url;
+        let profileurl = myJson.html_url;
+        let location   = myJson.location;
+        let followersnum = myJson.followers;
+        let followingnum = myJson.following;
+        let reposnum     = myJson.public_repos;
 
 
 
