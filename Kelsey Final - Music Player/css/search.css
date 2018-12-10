@@ -1,0 +1,150 @@
+
+body {
+ 
+
+   background: #000000;
+   font-family: Roboto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #54ff6a;
+  height:60px;
+  padding-top: 20px;
+  padding-left: 35vw;
+}
+
+.topnav a {
+  float: center;
+  color: #000;
+  text-align: center;
+  padding: 30px 50px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family:Roboto-bold;
+
+}
+
+.topnav a:hover {
+  background-color: #000;
+  color: white;
+
+}
+
+.topnav a.active {
+  background-color: #000;
+  color: white;
+}
+
+
+/*===============================
+            SEARCH
+=================================*/
+
+#foryou{
+
+    width:100px;
+    height: 50px;
+    position: relative;
+    right: -50vw;
+}
+
+#search_artist {
+    padding:20px;
+}
+
+#search_artist .wrapper {
+    margin: 0 auto;
+}
+
+#search_artist .wrapper h1 {
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px;
+    color: #54ff6a;
+    font-family: 'Roboto-bold';
+}
+
+input {
+    width: 100%;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    border: 1px solid #d6d6d6;
+    padding: 10px 30px;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: #54ff6a;
+    font-family:Roboto;
+    text-align: center;
+}
+
+#search_artist .wrapper #btn_search {
+    width: 150px;
+    color: #03A9F4;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*===============================
+           ALBUMS
+=================================*/
+#album_list_container {
+    margin-top: 50px;
+}
+
+#album_list_container .album_item {
+    padding: 20px 0;
+    background:#000000;
+    border-top: 0px solid #dedede;
+    text-align: center;
+}
+
+#album_list_container .album_item .item_thmb {
+    width: 200px;
+    height: 200px;
+    margin:0 auto;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+
+#album_list_container .album_item .item_title {
+    font-size: 20px;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+#album_list_container .album_item .item_price {
+    text-align: center;
+    color: #54ff6a;
+    font-size: 14px;
+}
+
+#album_list_container .album_item a {
+    background: #54ff6a;
+    color: #000000;
+    padding: 8px 16px;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-top: 20px;
+     margin-left: 20px;
+    cursor: pointer;
+}
+
+#not_match  {
+    display:none;
+    text-align: center;
+}

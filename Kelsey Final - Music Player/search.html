@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title> Search Music</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css'>
+
+      <link rel="stylesheet" href="css/search.css">
+
+  
+</head>
+
+<body>
+  <div class="topnav">
+  <a  href="search.html">Search</a>
+  <a href="play.html">For You</a>
+  
+</div>
+
+<div style="padding-left:16px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+<!-- <iframe src = "play.html" height="1000px" width="500px" > -->
+
+
+          <div class="container">
+            <div class="row" id="search_artist">
+                <div class="wrapper">
+                    <h1> Search Music</h1>
+
+                  <!-- form -->
+                    <form id="form">
+                        <input type="text" placeholder="Search artist name" id="input_search"/>
+
+                      <!--   <button id="foryou">For you</button>> -->
+
+
+                    </form>
+                   <!--  <button class="checkout">Check out</button> -->
+                </div>
+            </div>
+
+          <!-- album list -->
+            <div class="row" id="album_list_container">
+
+            </div>
+          <!-- error -->
+            <div id="not_match">
+                Sorry, nothing here.
+            </div>
+
+        </div>
+  
+  
+
+    <script  src="js/search.js"></script>
+
+
+
+
+</body>
+
+</html>
