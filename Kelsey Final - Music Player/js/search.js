@@ -9,13 +9,13 @@
   /* Grab form, get input interact with database */
   this.search = function()
   {
-    var form = document.querySelector("#form");
+    const form = document.querySelector("#form");
 
     form.addEventListener("submit",function(e)
                           {
       e.preventDefault();//prevent form from resetting the page
       //grab actual input to get value
-      var value = document.querySelector("#input_search").value;
+      const value = document.querySelector("#input_search").value;
 
       form.reset(); //reset the form after we grab the value
 
@@ -29,13 +29,13 @@ Create a HTTP request
 */
   this.getData = function(artist)
   {
-    var http = new XMLHttpRequest();
+    const http = new XMLHttpRequest();
     artist = artist.toString();
-    var url = "https://itunes.apple.com/search?term="+artist+"&entity=album";
-    var method = "GET";
+    const url = "https://itunes.apple.com/search?term="+artist+"&entity=album";
+    const method = "GET";
 
     //clear album container everytime
-    var container = document.querySelector('#album_list_container');
+   const container = document.querySelector('#album_list_container');
     container.innerHTML = '';
 
     http.open(method,url); //open a request
@@ -63,15 +63,15 @@ Create a HTTP request
   {
     console.log(obj);
     //grab container to host this
-    var container = document.querySelector("#album_list_container");
-    var template = '';
+    let container = document.querySelector("#album_list_container");
+    let template = '';
     document.querySelector('#not_match').style.display="none";
     if(obj.results.length > 0)
     {
 
       //there are albums
       //loop through object results array and create the template
-      for(var i = 0; i< obj.results.length; i++)
+      for(let i = 0; i< obj.results.length; i++)
       {
         template += '<div class = "col-sm-3 album_item">';
 
