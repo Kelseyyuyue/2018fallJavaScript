@@ -85,6 +85,7 @@ Create a HTTP request
 
         template +='<a href = '+obj.results[i].collectionViewUrl+' target = "_blank"> View </a>';
 
+
         // template +='<a href = "purchase.html"> Check out </a>';
 
         template +='</div>';

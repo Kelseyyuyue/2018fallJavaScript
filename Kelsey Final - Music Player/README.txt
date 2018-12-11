@@ -3,7 +3,7 @@
 
 A simple website that use html5 & es6, itunes API.
 
-The seach function is connected to itunes API.
+The search function is connected to itunes API.
 
 The music player served from a list of self created data objects. 
 
