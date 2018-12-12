@@ -79,11 +79,13 @@ Create a HTTP request
 
         template += '<div class = "item_title"> '+obj.results[i].collectionName+'</div>';
 
+
         template += '<div class = "item_price">';
 
         template +='<span>Price:</span> '+obj.results[i].collectionPrice+' </div>';
 
         template +='<a href = '+obj.results[i].collectionViewUrl+' target = "_blank"> View </a>';
+
 
 
         // template +='<a href = "purchase.html"> Check out </a>';
